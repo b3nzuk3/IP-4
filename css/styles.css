@@ -1,28 +1,27 @@
 body {
+  margin: auto;
   background-image: url("backgrounds/pizza-background-image.jpg");
   background-size: cover;
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
-
   text-align: center;
 }
 
-section{
+section {
   padding-top: 50px;
 }
 
-.menu{
+.menu {
   background-color: #FDFFA9;
   border-radius: 20%;
   padding: 30px;
 }
 
-
-h4{
+h4 {
   font-family: 'Palette Mosaic', cursive;
 }
 
-img{
+img {
   height: 50.75%;
   width: 70.75%;
   border-radius: 100%;
@@ -30,16 +29,22 @@ img{
   margin-top: 30px;
 }
 
-select{
+select {
   width: 20%;
 }
 
-.cart-table{
+.cart-table {
   padding-top: 30px;
 }
 
-
-.order-options{
+.order-options {
   background-color: #fff;
   padding: 50px;
+  margin-bottom: 50px;
+}
+
+.contact {
+  background-color: #243D25;
+  color: #fff;
+  padding: 30px;
 }
