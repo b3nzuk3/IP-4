@@ -1,8 +1,11 @@
-$(document).ready(function(){
+$(document).ready(function() {
 
-$("table").hide();
+  $("table").hide();
 
-$('#order-btn').click(function() {
+
+
+
+  $('#order-btn').click(function() {
     var sizeOfPizza = $(".size option:selected").val();
     var toppingsOfPizza = $(".toppings option:selected").val();
     var crustOfPizza = $(".crust option:selected").val();
@@ -11,7 +14,8 @@ $('#order-btn').click(function() {
     var grandTotal = 0;
 
     $("table").show();
-    $("#order-button").hide();
+    $(".additional-buttons").show();
+    $("#order-btn").hide();
 
     $("#size").html($(".size option:selected").text() + " - " + sizeOfPizza);
     $("#toppings").html($(".toppings option:selected").text() + " - " + toppingsOfPizza);
@@ -26,10 +30,7 @@ $('#order-btn').click(function() {
       this.orderNo = orderNo;
     }
 
-});
-
-
-$('.btn.add-pizza').click(function() {
+    $('#addAnother').click(function() {
       var sizeOfPizza = $(".size option:selected").val();
       var toppingsOfPizza = $(".toppings option:selected").val();
       var crustOfPizza = $(".crust option:selected").val();
@@ -44,6 +45,11 @@ $('.btn.add-pizza').click(function() {
 
       $("#new-pizza").append(newRow);
     });
+
+
+  });
+
+
 
 
 
