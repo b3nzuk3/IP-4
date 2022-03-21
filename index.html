@@ -41,10 +41,10 @@
         <div class="col-md-4">
           <img src="pizzaImages/pizza-whole.jpeg" alt="">
           <div class="container">
-            <select class="form-control" name="">
-              <option label="Small" value=""></option>
-              <option label="Medium" value=""></option>
-              <option label="Large" value=""></option>
+            <select class="form-control size" name="">
+              <option label="Small" value="250">Small</option>
+              <option label="Medium" value="450">Medium</option>
+              <option label="Large" value="700">Large</option>
             </select>
           </div>
         </div>
@@ -52,26 +52,26 @@
         <div class="col-md-4">
           <img src="pizzaImages/pizza-deg.jpeg" alt="">
           <div class="container">
-            <select class="form-control" name="">
-              <option label="Mushroom" value=""></option>
-              <option label="Extra Cheese" value=""></option>
-              <option label="Sausage" value=""></option>
+            <select class="form-control crust" name="">
+              <option label="Mushroom" value="150">Mushroom</option>
+              <option label="Extra Cheese" value="250">Extra Cheese</option>
+              <option label="Sausage" value="200">Sausage</option>
             </select>
           </div>
         </div>
         <div class="col-md-4">
           <img src="pizzaImages/pizza-toppings.jpeg" alt="">
           <div class="container">
-            <select class="form-control" name="">
-              <option label="Small" value=""></option>
-              <option label="Medium" value=""></option>
-              <option label="Large" value=""></option>
+            <select class="form-control toppings" name="">
+              <option label="Pineapple" value="120">Pineapple</option>
+              <option label="Cherry" value="160">Cherry</option>
+              <option label="Berry" value="80">Berry</option>
             </select>
           </div>
         </div>
 
         <div class="container">
-          <button type="button" name="button"></button>
+          <button id="order-btn" type="button" name="button"></button>
         </div>
 
       </div>
@@ -89,29 +89,15 @@
             <th scope="col">Cost</th>
           </tr>
         </thead>
-        <tbody>
+        <tbody id="new-pizza">
           <tr>
             <th scope="row">1</th>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>@mdo</td>
+            <td id="size"></td>
+            <td id="crust"></td>
+            <td id="toppings"></td>
+            <td id="cost"> </td>
           </tr>
-          <tr>
-            <th scope="row">2</th>
-            <td>Jacob</td>
-            <td>Thornton</td>
-            <td>@fat</td>
-          </tr>
-          <tr>
-            <th scope="row">3</th>
-            <td colspan="2">Larry the Bird</td>
-            <td>@twitter</td>
-          </tr>
-          <tr>
-            <th scope="row">3</th>
-            <td colspan="2">Larry the Bird</td>
-            <td>@twitter</td>
-          </tr>
+
         </tbody>
       </table>
     </div>

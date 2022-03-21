@@ -10,9 +10,23 @@ section{
   padding-top: 50px;
 }
 
+.menu{
+  background-color: #FDF6EC;
+  border-radius: 20%;
+}
+
 img{
-  height: 250px;
-  width: 250px;
+  height: 50.75%;
+  width: 70.75%;
   border-radius: 100%;
   margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+select{
+  width: 20%;
+}
+
+.cart-table{
+  padding-top: 30px;
 }
