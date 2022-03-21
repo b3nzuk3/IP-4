@@ -3,7 +3,10 @@ $(document).ready(function() {
   $("table").hide();
   $('#addAnother').hide();
   $("#checkout-btn").hide();
-
+  $(".additional-info").hide();
+  $(".btn.yes").hide();
+  $(".btn.no").hide();
+  $(".additional-info h4").hide();
 
   $('#order-btn').click(function() {
     var sizeOfPizza = $(".size option:selected").val();
@@ -47,7 +50,39 @@ $(document).ready(function() {
       $("#new-pizza").append(newRow);
     });
 
+    $("#checkout-btn").click(function() {
+      $("#addAnother").hide();
+      $("#checkout-btn").hide();
+      $(".additional-info").show();
+      $(".btn.yes").show();
+      $(".btn.no").show();
+      $(".additional-info .location").hide();
+      grandTotal = grandTotal + total;
 
+      $(".additional-info h3 span").html(grandTotal);
+    });
+
+    $(".btn.yes").click(function() {
+      $(".additional-info h5").hide();
+      $(".btn.yes").hide();
+      $(".btn.no").hide();
+      $(".additional-info .location").show();
+      $(".additional-info h3 span").html(grandTotal + 300);
+    });
+
+    $(".btn.no").click(function() {
+      $(".additional-info h5").hide();
+      $(".btn.yes").hide();
+      $(".btn.no").hide();
+      $(".additional-info .location").show();
+    });
+
+    $(".btn.complete").click(function() {
+      var location = $(".additional-info .location input").val();
+      $(".additional-info h4").show();
+      $(".additional-info .location").hide();
+      $(".additional-info h4 span").html(location);
+    });
   });
 
 

@@ -37,3 +37,9 @@ select{
 .cart-table{
   padding-top: 30px;
 }
+
+
+.order-options{
+  background-color: #fff;
+  padding: 50px;
+}
