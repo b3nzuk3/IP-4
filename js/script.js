@@ -1,8 +1,8 @@
 $(document).ready(function() {
 
   $("table").hide();
-
-
+  $('#addAnother').hide();
+  $("#checkout-btn").hide();
 
 
   $('#order-btn').click(function() {
@@ -14,13 +14,14 @@ $(document).ready(function() {
     var grandTotal = 0;
 
     $("table").show();
-    $(".additional-buttons").show();
+    $("#addAnother").show();
+    $("#checkout-btn").show();
     $("#order-btn").hide();
 
-    $("#size").html($(".size option:selected").text() + " - " + sizeOfPizza);
-    $("#toppings").html($(".toppings option:selected").text() + " - " + toppingsOfPizza);
-    $("#crust").html($(".crust option:selected").text() + " - " + crustOfPizza);
-    $("#cost").html(total);
+    $("#size").html($(".size option:selected").text() + " -  " + sizeOfPizza);
+    $("#crust").html($(".crust option:selected").text() + " -  " + toppingsOfPizza);
+    $("#toppings").html($(".toppings option:selected").text() + " -  " + crustOfPizza);
+    $("#cost").html("ksh, " + total);
 
     function Pizza(size, toppings, crust, total, orderNo) {
       this.size = size;
@@ -41,7 +42,7 @@ $(document).ready(function() {
 
       var newPizza = new Pizza(sizeOfPizza, toppingsOfPizza, crustOfPizza, total, order);
 
-      var newRow = '<tr><th scope="row">' + newPizza.orderNo + '</th><td id="size">' + $(".size option:selected").text() + " - " + newPizza.size + '</td><td id="toppings">' + $(".toppings option:selected").text() + " - " + newPizza.toppings + '</td><td id="crust">' + $(".crust option:selected").text() + " - " + newPizza.crust + '</td><td id="total">' + newPizza.total + '</td></tr>'
+      var newRow = '<tr><th scope="row">' + newPizza.orderNo + '</th><td id="size">' + $(".size option:selected").text() + " - " + newPizza.size + '</td><td id="crust">' + $(".crust option:selected").text() + " - " + newPizza.toppings + '</td><td id="toppings">' + $(".toppings option:selected").text() + " -  " + newPizza.crust + '</td><td id="total">' + "ksh, " + newPizza.total + '</td></tr>'
 
       $("#new-pizza").append(newRow);
     });

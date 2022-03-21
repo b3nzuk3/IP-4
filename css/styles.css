@@ -3,6 +3,7 @@ body {
   background-size: cover;
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
+
   text-align: center;
 }
 
@@ -11,8 +12,14 @@ section{
 }
 
 .menu{
-  background-color: #FDF6EC;
+  background-color: #FDFFA9;
   border-radius: 20%;
+  padding: 30px;
+}
+
+
+h4{
+  font-family: 'Palette Mosaic', cursive;
 }
 
 img{
