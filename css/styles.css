@@ -11,6 +11,16 @@ section {
   padding-top: 50px;
 }
 
+h1{
+  font-weight: bolder;
+}
+
+.pizza-h1{
+  font-size: 1.3rem;
+  font-weight: bolder;
+  line-height: 1.5;
+}
+
 .menu {
   background-color: #FDFFA9;
   border-radius: 20%;
@@ -35,6 +45,10 @@ select {
 
 .cart-table {
   padding-top: 30px;
+}
+
+.btn{
+  margin-bottom: 20px;
 }
 
 .order-options {
