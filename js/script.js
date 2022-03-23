@@ -59,7 +59,7 @@ $(document).ready(function() {
       $(".additional-info .location").hide();
       grandTotal = grandTotal + total;
 
-      $(".additional-info h3 span").html(grandTotal);
+      $(".additional-info h3 span").html("Kshs, " + grandTotal);
     });
 
     $(".btn.yes").click(function() {
@@ -67,7 +67,7 @@ $(document).ready(function() {
       $(".btn.yes").hide();
       $(".btn.no").hide();
       $(".additional-info .location").show();
-      $(".additional-info h3 span").html(grandTotal + 300);
+      $(".additional-info h3 span").html("Kshs, "+ (grandTotal + 300));
     });
 
     $(".btn.no").click(function() {
@@ -82,6 +82,7 @@ $(document).ready(function() {
       $(".additional-info h4").show();
       $(".additional-info .location").hide();
       $(".additional-info h4 span").html(location);
+      $("")
     });
   });
 
