@@ -1,9 +1,9 @@
 body {
   margin: auto;
+  font-family: 'Open Sans', sans-serif;
   background-image: url("backgrounds/pizza-background-image.jpg");
   background-size: cover;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: bold;
+    font-weight: bold;
   text-align: center;
 }
 
@@ -11,11 +11,12 @@ section {
   padding-top: 50px;
 }
 
-h1{
-  font-weight: bolder;
+.pizza-h2 {
+
+  font-family: 'Palette Mosaic', cursive;
 }
 
-.pizza-h1{
+.pizza-h1 {
   font-size: 1.3rem;
   font-weight: bolder;
   line-height: 1.5;
@@ -47,7 +48,7 @@ select {
   padding-top: 30px;
 }
 
-.btn{
+.btn {
   margin-bottom: 20px;
 }
 
